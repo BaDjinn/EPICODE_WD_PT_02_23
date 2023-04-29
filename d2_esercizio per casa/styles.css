@@ -1,0 +1,74 @@
+body{
+    text-align: center;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+}
+
+header div img {
+    width: 30%;
+}
+
+header nav {
+    border-top: 1px yellow solid;
+    background-color: #fdfbf1;
+    font-size: 80%;
+    color: #127878; 
+    margin-top: 1rem;
+}
+
+header nav p span {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+main {
+    width: 50%;
+    margin: auto;
+    text-align: left;
+}
+h1 {
+    text-align: center;
+}
+
+main section picture img{
+    border-radius: 10px;
+}
+
+main section picture figcaption{
+    text-align: center;
+}
+
+main section div:nth-of-type(2){
+    border-left: 1px yellow solid;
+    background-color: #fdfbf1;
+}
+
+main section div:nth-of-type(2) p {
+    text-align: left;
+    font-weight: bold;
+    color: #ff9966;
+    text-transform: uppercase;
+}
+
+main section div:nth-of-type(2) a {
+    text-align: left;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+
+
+@media screen and (max-width:500px) {
+
+    header nav{
+        border-top: 1px yellow solid;
+        background-color: #ff9966;
+        font-size: 80%;
+        color: #ff0606; 
+        margin-top: 1rem;
+    }
+    
+}
