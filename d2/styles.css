@@ -1,0 +1,44 @@
+html{
+    font-size: 0.9rem;
+    margin: 8;
+}
+
+*{
+    box-sizing:content-box;
+}
+
+body {
+    color: sandybrown;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+header{
+    background-color: beige;
+    border: 1px solid red;
+}
+
+nav{
+    color: white;
+    text-transform: capitalize;
+}
+header h1{
+    font-size: 1.5rem;
+}
+
+footer p{
+    color:rebeccapurple;
+    font-size: 0.6em;
+}
+
+main{
+    width: 100%;
+    background-color: gray;
+    font-size: 0.9rem;
+}
+
+footer address{
+    font-size: 0.9rem;
+    color: blue;
+}
