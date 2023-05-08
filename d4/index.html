@@ -16,14 +16,35 @@
     <main>
         <form id="survey-form" method="post">
             <fieldset>
-                <label id="name-label" for="name">Alias: <input name="name" id="name" type="text"
-                        placeholder="Enter your name" required /></label>
-                <label id="email-label" for="email">Email:
+                <label id="name-label" for="name"> Alias:
+                    <input name="name" id="name" type="text" placeholder="Enter your name" required /></label>
+                <label id="email-label" for="email"> Email:
                     <input type="email" name="email" id="email-label" placeholder="name@mail.lol" required /></label>
-                <label id="number-label" for="number">Age: <input type="number" name="number" id="number" min="10"
-                        max="120" placeholder="Age" /></label>
-                <select name="gender" id="dropdown"></select>
-
+                <label id="number-label" for="number"> Age:
+                    <input type="number" name="number" id="number" min="10" max="120" placeholder="Age" /></label>
+                <select name="role" id="dropdown" placeholder>
+                    <p>What is your current role?</p>
+                    <option selected disabled value="">My current role is ...</option>
+                    <option value="1">Student</option>
+                    <option value="2">Part-time</option>
+                    <option value="3">Full-time</option>
+                    <option value="4">Freelancer</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <p>Whould you recommend us?</p>
+                <label for="recommendYes">
+                    <input type="radio" id="recommendYes" name="recommend" value="Yes" /> Yes
+                </label>
+                <label for="recommendNo">
+                    <input type="radio" id="recommendNo" name="recommend" value="No" /> No
+                </label>
+                <label for="recommendMaybe">
+                    <input type="radio" name="recommend" id="recommendMaybe" value="Maybe" /> Maybe
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for=""></label>
                 <input type="submit" value="Submit" />
             </fieldset>
         </form>
