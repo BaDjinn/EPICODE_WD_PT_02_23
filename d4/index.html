@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
 </head>
+
 <body>
-    
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Help us improve our service</p>
+    </header>
+    <main>
+        <form id="survey-form" method="post">
+            <fieldset>
+                <label id="name-label" for="name">Alias: <input name="name" id="name" type="text"
+                        placeholder="Enter your name" required /></label>
+                <label id="email-label" for="email">Email:
+                    <input type="email" name="email" id="email-label" placeholder="name@mail.lol" required /></label>
+                <label id="number-label" for="number">Age: <input type="number" name="number" id="number" min="10"
+                        max="120" placeholder="Age" /></label>
+                <select name="genter" id="dropdown"></select>
+
+                <input type="submit" value="Submit" />
+            </fieldset>
+        </form>
+    </main>
 </body>
+
 </html>
