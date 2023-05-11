@@ -33,8 +33,9 @@ form {
 }
 
 fieldset {
-    padding: 2em 0;
+    padding-top; 0;
     border: none;
+    padding-bottom:0;
 }
 
 fieldset p {
@@ -48,14 +49,41 @@ label, #dropdown {
     width: 90%;
 }
 
-label input{
+#dropdown{
+    width:81.5%;
+}
 
+input, #dropdown {
+    margin-top:2em;
+    border-color:rgb(255, 205, 154);
+    box-shadow:0 0 1em rgb(255, 205, 154,0.25);
+    border-radius: 0.6em;
+}
+
+label input{
     display: block;
     margin: 0.5em auto;
     width: 90%;
     padding: 0 0;
 }
 
-.notThis {
-
+.notThis{
+    display:inline;
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
 }
+
+input[type="submit"] {
+  display: block;
+  width: 80%;
+  margin: 0.6em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color:rgba(71, 61, 139, 0.8);
+  border-color:#bad911;
+  color:#bad911;
+  min-width: 300px;
+  box-shadow:0 0 1em rgba(186, 217, 17,0.25);
+}
+
