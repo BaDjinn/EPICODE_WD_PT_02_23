@@ -35,8 +35,10 @@ form {
 fieldset {
     padding-top: 0;
     border: none;
-    padding-bottom:0;
-}
+    padding-bottom:0;}
+fieldset:nth-last-of-type(2){
+    text-align: center;
+} 
 
 fieldset p {
     margin: 0.5em auto;
@@ -53,7 +55,7 @@ label, #dropdown {
     width:81.5%;
 }
 
-input, #dropdown {
+input, textarea, #dropdown {
     margin-top:2em;
     border-color:rgb(255, 205, 154);
     box-shadow:0 0 1em rgb(255, 205, 154,0.25);
