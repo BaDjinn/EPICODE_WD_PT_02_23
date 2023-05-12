@@ -35,7 +35,8 @@ form {
 fieldset {
     padding-top: 0;
     border: none;
-    padding-bottom:0;}
+    padding-bottom:0;
+}
 
 fieldset p {
     margin: 0.5em auto;
