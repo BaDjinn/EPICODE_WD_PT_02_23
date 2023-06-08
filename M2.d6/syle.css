@@ -5,3 +5,8 @@
 .bold-text {
     font-weight: bold;
 }
+
+.red-box{
+    padding: 10px;
+    background-color: orange;
+}

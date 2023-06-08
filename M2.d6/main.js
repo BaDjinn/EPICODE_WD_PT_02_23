@@ -32,3 +32,13 @@ function remClass(){
 heading.classList.remove('red-text');
 heading.classList.remove('bold-text');
 }
+
+let newDiv = document.createElement('div');
+let body = document.getElementsByTagName('body')[0];
+//body.appendChild(newDiv);
+newDiv.innerText="Hi, i'm new here";
+newDiv.style.color="blue";
+newDiv.classList.add('red-box');
+//newDiv.id = "red-box";
+const parentElement = document.querySelector('#create-node-container');
+parentElement.appendChild(newDiv);
