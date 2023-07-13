@@ -1,0 +1,30 @@
+body{
+    width: 100%;
+}
+
+nav{
+    width: 100vw
+
+}
+
+#menu {
+    position: absolute;
+    transform: translateX(100%);
+}
+
+#menu ul li {
+    cursor:pointer;
+    font-size:0;
+    padding:0;
+}
+
+#menu.menu-open{
+    transform: translateX(0%);
+    width:50%;
+    height: calc(100vh-80px);
+}
+
+#menu.menu-open ul li {
+    font-size: 20px;
+    padding:10px;
+}
