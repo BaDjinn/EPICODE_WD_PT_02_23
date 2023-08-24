@@ -5,7 +5,8 @@ async function fetchUsers(){
         const response = await fetch(`${API_URL}users`);
         const data = await response.json();
 
-        displayUsers(data);
+        setTimeout(()=>{document.querySelector('.spinner-container').classList.add('d-none')
+        displayUsers(data);},500)
     } catch (error){
         console.log("Errore:",error);
     }
@@ -53,8 +54,29 @@ async function deleteUser(userID){
     if (confirm('Sei sicuro sicuro sicurissimo?')){
     try{
         await fetch(`${API_URL}users/${userID}`,{ method: 'DELETE'});
-        window.location.href = 'index.html';
+        window.location.href = 'index.html?status=cancel-ok';
     } catch(error){
         console.log(`Errore: ${error}`);
     }}
+}
+
+
+function handleAlertMessage(){
+    const qsParams = new URLSearchParams(window.location.search);
+    const status = qsParams.get('status');
+    if(status && status==='create-ok') showAlert('create');
+    if(status && status==='edit-ok') showAlert('update');
+    if(status && status==='cancel-ok') showAlert('cancel');
+}
+
+function showAlert (){
+    const alertCnt = document.getElementById('alert-container')
+    alertCnt.style.display = 'block'
+    alertCnt.innerHTML=actionType === 'create'
+        ? 'Utente creato con successo'
+        : 'Utente eliminato con successo'
+
+        setTimeout(()=>{
+            alertCnt.style.display= null;
+        })
 }

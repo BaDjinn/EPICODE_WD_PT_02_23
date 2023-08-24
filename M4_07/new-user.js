@@ -14,7 +14,10 @@ async function getUserData() {
     } else {
         //nuovo
     }
-
+    setTimeout(()=>{document.querySelector('.spinner-container').classList.add('d-none')
+        displayUsers(data);},500)
 }
+
+//element.scrollIntoView()
 
 getUserData();
