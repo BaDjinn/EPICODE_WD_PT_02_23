@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Gestione utenti</title>
+
+  </head>
+
+  <body>
+    
+    <header>
+      <h1 id="page-title" class="resource-title"></h1>
+      <button class="btn btn-success mb-3" onclick="goBack()">Torna indietro</button>
+    </header>
+
+    <div class="container">
+
+      <div class="spinner-container">
+        <div id="spinner-row" class="spinner-border" role="status">
+          <span class="visually-hidden">Caricamento...</span>
+        </div>
+      </div> 
+
+      <form id="user-form" class="d-none" novalidate>
+
+        <input type="hidden" id="user-id">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="name" required>
+          <span class="text-danger" id="name-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="text" class="form-control" id="email" required>
+          <span class="text-danger" id="email-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input type="text" class="form-control" id="username" required>
+          <span class="text-danger" id="username-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Telefono</label>
+          <input type="text" class="form-control" id="phone" required>
+          <span class="text-danger" id="phone-error"></span>
+        </div>
+        
+        <div class="mb-3">
+          <label for="city" class="form-label">Città</label>
+          <input type="text" class="form-control" id="city" required>
+          <span class="text-danger" id="city-error"></span>
+        </div>
+
+        <div class="mb-3">
+          <label for="company" class="form-label">Azienda</label>
+          <input type="text" class="form-control" id="company" required>
+          <span class="text-danger" id="company-error"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salva</button>
+
+      </form>
+
+    </div>
+
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="./user-form.js"></script>    
+  </body>
+
+</html>
