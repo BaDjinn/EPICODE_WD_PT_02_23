@@ -1,0 +1,20 @@
+.btnred {
+    color: white;
+    background: red;
+    border: none;
+    padding: .5rem;
+}
+
+.btnblue {
+    color: white;
+    background: blue;
+    border: none;
+    padding: .5rem;
+}
+
+.btnyellow {
+    color: black;
+    background: yellow;
+    border: none;
+    padding: .5rem;
+}

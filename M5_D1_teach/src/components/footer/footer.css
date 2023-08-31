@@ -1,0 +1,14 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: black;
+    color: white;
+}
+
+.footer-ul {
+    list-style: none;
+}
+
+.footer-ul li {
+    margin-bottom: 1rem;
+}
