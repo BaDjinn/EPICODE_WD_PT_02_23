@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "nanoid": "^4.0.2",
+    "react-bootstrap": "^2.8.0"
+  }
+}
