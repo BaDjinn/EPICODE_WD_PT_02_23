@@ -1,10 +1,32 @@
-import React, { Component } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import MyCard from "../card/MyCard";
 import { nanoid } from "nanoid";
 
 
-export class LastestRelease extends Component {
+const LastestRelease = (books)=>{
+  return (
+    <Container>
+      <Row>
+        {books &&
+          books.map((book) => {
+            return (
+              <Col key={nanoid()} xs={12} sm={6} md={3}>
+                <MyCard
+                  url={book.img}
+                  title={book.title}
+                  text={book.category}
+                />
+              </Col>
+            );
+          })}
+      </Row>
+    </Container>
+  );
+}
+
+
+/* export class LastestRelease extends Component {
   render() {
     return (
       <Container>
@@ -14,7 +36,6 @@ export class LastestRelease extends Component {
               return (
                 <Col key={nanoid()} xs={12} sm={6} md={3}>
                   <MyCard
-                    /* key = {book.id} */
                     url={book.img}
                     title={book.title}
                     text={book.category}
@@ -26,6 +47,6 @@ export class LastestRelease extends Component {
       </Container>
     );
   }
-}
+} */
 
 export default LastestRelease;

@@ -7,9 +7,9 @@ import {nanoid} from 'nanoid'
 export class MyNav extends Component {
   
   render() {
-    return (<Navbar expand="lg" className="bg-body-tertiary">
+    return (<Navbar expand="lg" className="bg-body-tertiary md-3">
     <Container>
-      <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <Navbar.Brand href="#home">EpiBooks</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
