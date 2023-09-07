@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { nanoid } from 'nanoid';
 
 export class MyCard extends Component {
   render() {
     return (
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={this.props.url} />
+        <Card key={/* this.props.key */ nanoid()} style={{ width: 'auto' }}>
+        <Card.Img variant="top" src={this.props.url} fluid='true'/>
         <Card.Body>
           <Card.Title>{this.props.title}</Card.Title>
           <Card.Text>{this.props.text}         

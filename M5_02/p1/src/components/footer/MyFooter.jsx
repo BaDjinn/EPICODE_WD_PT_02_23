@@ -12,10 +12,10 @@ export class MyFooter extends Component {
                         <Nav.Link href='#'>Link1</Nav.Link>
                     </Col>
                     <Col>
-                      <Nav.Link href='#'>Link1</Nav.Link>
+                      <Nav.Link href='#'>Link2</Nav.Link>
                     </Col>
                     <Col>
-                      <Nav.Link href='#'>Link1</Nav.Link>
+                      <Nav.Link href='#'>Link3</Nav.Link>
                     </Col>
                 </Row>
             </Container>         
